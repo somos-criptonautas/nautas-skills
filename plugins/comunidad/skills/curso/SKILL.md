@@ -34,4 +34,4 @@ Si la edición cambia sentido, se marca explícitamente en el borrador: **cambia
 1. Mostrar el **diff** por sección, con una línea de por qué.
 2. Con confirmación explícita:
    - Si la persona tiene permiso de edición: aplicar la edición.
-   - Si no (lo normal fuera del staff): publicarlo como respuesta en el tema, con el diff, para que el staff lo aplique.
+   - Si no (lo normal fuera del staff): publicarlo como respuesta en el mismo tema, con el diff, para que el staff lo aplique.

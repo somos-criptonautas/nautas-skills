@@ -74,4 +74,4 @@ Nunca publicar ni editar sin un sí explícito.
 3. Recién ahí `discourse_create_topic`, `discourse_create_post` o la herramienta de edición.
 4. Devolver el enlace publicado.
 
-Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en el topic para que alguien del staff lo aplique.
+Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en el mismo topic que se quería editar, con el diff, para que alguien del staff lo aplique. Con confirmación, como todo lo demás.
