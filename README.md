@@ -30,7 +30,7 @@ La primera vez que el agente usa el foro, abre un enlace para autorizar con nues
 Dentro de Claude Code:
 
 ```text
-/plugin marketplace add criptonautas/nautas-skills
+/plugin marketplace add somos-criptonautas/nautas-skills
 /plugin install comunidad@criptonautas
 ```
 
@@ -44,7 +44,7 @@ Reiniciar Claude Code, escribir `/mcp`, elegir `comunidad` y autorizar en el enl
 ### opencode
 
 ```bash
-git clone https://github.com/criptonautas/nautas-skills ~/nautas-skills
+git clone https://github.com/somos-criptonautas/nautas-skills ~/nautas-skills
 ```
 
 ```bash
@@ -81,7 +81,7 @@ pi install npm:pi-mcp-adapter
 ```
 
 ```bash
-git clone https://github.com/criptonautas/nautas-skills ~/nautas-skills
+git clone https://github.com/somos-criptonautas/nautas-skills ~/nautas-skills
 ```
 
 Sumar en `~/.config/mcp/mcp.json`, con la ruta completa (reemplazar `USUARIO`). Si el archivo ya existe, agregar solo `claudePlugins`:
