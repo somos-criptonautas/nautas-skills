@@ -1,0 +1,11 @@
+{
+  "name": "criptonautas",
+  "owner": { "name": "Criptonautas" },
+  "plugins": [
+    {
+      "name": "comunidad",
+      "source": "./plugins/comunidad",
+      "description": "Skills de voz, glosario, wikis y curso + MCP de Discourse para comunidad.criptonautas.co"
+    }
+  ]
+}
