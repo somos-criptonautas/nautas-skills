@@ -17,8 +17,7 @@ Aplicar primero la skill `voz-del-foro`. En el curso manda la **voz de la comuni
 - **Arriba:** `> [!tldr]` de 1–2 oraciones.
 - **Navegación:** al inicio, de dónde viene ("Este tema continúa [2.2 Análisis técnico](…)"); al final, a dónde sigue ("Con el método claro, lo que sigue son los [ciclos de mercado](…)").
 - **Secciones numeradas:** `## N.N.N.1 …`, `### …`. Al insertar una sección, renumerar las siguientes y avisarlo.
-- **Placeholders** (`[IMAGEN-…]`, `[VIDEO-…]`, `[ENCUESTA-…]`) no se borran ni se inventa su contenido.
-- **Reglas que quedan:** los casos cierran con `> **La regla que queda:** …`.
+- **Placeholders** (`[IMAGEN-…]`, `[VIDEO-…]`, `[ENCUESTA-…]`) no se borran ni se inventa su contenido. Se editan y/o actualizan.
 - **TL;DR del capítulo:** tiene autochequeo con `[poll]` y `[details="Ver respuesta"]`. Si el tema cambia algo que el TL;DR resume, proponer también ese ajuste.
 - Ejemplos de la comunidad con enlace al topic original ("de la charla sobre patrones de velas").
 

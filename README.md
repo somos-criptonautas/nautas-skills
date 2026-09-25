@@ -9,34 +9,21 @@ Skills y conexión a [comunidad.criptonautas.co](https://comunidad.criptonautas.
 
 | Skill | Para qué |
 |---|---|
-| `voz-del-foro` | Tono y formato de la comunidad. Antes de escribir, lee nuestras últimas publicaciones para tomar nuestra voz. |
-| `glosario` | Crear o editar términos del glosario sin duplicar. |
+| `voz-del-foro` | Tono y formato de la comunidad. Antes de escribir, lee nuestras últimas publicaciones para publicar o editar según nuestras convenciones, voz general y estilo personal. |
+| `glosario` | Crear o editar términos del glosario sin duplicar, convenciones básicas aplicadas para mantener consistencia al publicar. |
 | `wikis` | Wikis co-autoreadas con las plantillas del foro (Conceptos, Guía, Recursos, Experiencia). |
 | `curso` | Proponer o aplicar ediciones al curso respetando numeración, TL;DR y navegación. |
 
-La conexión usa el [MCP oficial de Discourse](https://github.com/discourse/discourse-mcp). Este repo no guarda claves.
+La conexión usa el servidor MCP oficial de nuestro Discourse (`https://comunidad.criptonautas.co/mcp`). Cada persona entra con su propia cuenta por OAuth, desde un enlace: este repo no guarda claves ni accesos, todo se gestiona en el foro.
 
 ## Antes de empezar
 
 - Cuenta activa en el foro.
-- Node.js 18 o superior (para `npx`).
-- Uno de estos agentes: Claude Code, opencode o pi.
+- Uno de estos agentes: Claude Code, Claude Desktop, opencode o pi.
 
-## 1. Generar nuestra clave (una sola vez)
+La primera vez que el agente usa el foro, abre un enlace para autorizar con nuestra cuenta. El acceso se revoca en el foro: Preferencias → Seguridad → Aplicaciones.
 
-La clave queda en nuestra máquina, en `~/.config/nautas/discourse.json`.
-
-```bash
-mkdir -p ~/.config/nautas
-```
-
-```bash
-npx -y @discourse/mcp@latest generate-user-api-key --site https://comunidad.criptonautas.co --save-to ~/.config/nautas/discourse.json
-```
-
-Abrir el enlace que aparece, aprobar en el foro y pegar el texto que devuelve. Si la clave se filtra, se revoca en el foro: Preferencias → Seguridad → Aplicaciones.
-
-## 2. Instalar en nuestro agente
+## Instalar en nuestro agente
 
 ### Claude Code
 
@@ -47,7 +34,12 @@ Dentro de Claude Code:
 /plugin install comunidad@criptonautas
 ```
 
-Reiniciar Claude Code. Skills y conexión quedan listas.
+Reiniciar Claude Code, escribir `/mcp`, elegir `comunidad` y autorizar en el enlace. Skills y conexión quedan listas.
+
+### Claude Desktop
+
+1. **Conexión:** Configuración → Conectores → Agregar conector personalizado → URL `https://comunidad.criptonautas.co/mcp` → Conectar y autorizar.
+2. **Skills:** descargar este repo, comprimir cada carpeta de `plugins/comunidad/skills/` en un `.zip` y subirla en Configuración → Capacidades → Skills.
 
 ### opencode
 
@@ -66,29 +58,46 @@ Sumar la conexión en `~/.config/opencode/opencode.json`:
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
     "comunidad": {
-      "type": "local",
-      "command": ["npx", "-y", "@discourse/mcp@latest", "--site", "https://comunidad.criptonautas.co", "--profile", "~/.config/nautas/discourse.json", "--allow_writes", "--tools_mode", "discourse_api_only"],
-      "enabled": true
+      "type": "remote",
+      "url": "https://comunidad.criptonautas.co/mcp",
+      "oauth": {}
     }
   }
 }
 ```
 
+Autorizar:
+
+```bash
+opencode mcp auth comunidad
+```
+
 ### pi
 
-pi no trae MCP incorporado; se suma con [`pi-mcp-adapter`](https://github.com/nicobailon/pi-mcp-adapter).
+pi no trae MCP incorporado; se suma con [`pi-mcp-adapter`](https://github.com/nicobailon/pi-mcp-adapter), que además carga las skills de este repo.
 
 ```bash
 pi install npm:pi-mcp-adapter
 ```
 
 ```bash
-pi install git:github.com/criptonautas/nautas-skills
+git clone https://github.com/criptonautas/nautas-skills ~/nautas-skills
 ```
 
-Sumar el bloque `comunidad` de [`plugins/comunidad/.mcp.json`](plugins/comunidad/.mcp.json) dentro de `mcpServers` en `~/.config/mcp/mcp.json` (si el archivo no existe, se copia tal cual). Reiniciar pi.
+Sumar en `~/.config/mcp/mcp.json`, con la ruta completa (reemplazar `USUARIO`). Si el archivo ya existe, agregar solo `claudePlugins`:
 
-## 3. Cómo se usa
+```json
+{
+  "claudePlugins": [
+    { "path": "/home/USUARIO/nautas-skills/plugins/comunidad", "mcp": true, "skills": true }
+  ],
+  "mcpServers": {}
+}
+```
+
+Reiniciar pi y autorizar con `/mcp-auth comunidad`.
+
+## Cómo se usa
 
 Se pide en lenguaje natural. Ejemplos:
 
@@ -100,19 +109,22 @@ Se pide en lenguaje natural. Ejemplos:
 
 El recorrido es siempre el mismo:
 
-1. **Lee nuestra voz:** nuestras últimas publicaciones en el foro.
-2. **Busca** si ya existe algo sobre el tema.
+1. **Lee nuestra voz y estilo:** nuestras últimas publicaciones en el foro.
+2. **Busca en la comunidad** si ya existe algo sobre el tema.
 3. **Muestra el borrador** (o el diff, si es una edición), con categoría y tags.
 4. **Espera un sí** explícito.
-5. **Publica** y devuelve el enlace.
+5. **Publica** y devuelve el enlace para verificar.
+
+SIEMPRE verificamos lo publicado, porque usamos la herramienta para agilizar y no para reemplazarnos. Somos una comunidad de humanos que usan herramientas, y eso no cambiará por utilizar IA.
 
 Si nuestro usuario no tiene permiso para editar algo (el curso, por ejemplo), el agente ofrece dejar la propuesta como respuesta en el tema para que el staff la aplique.
 
-## Actualizar
+## Cómo actualizar
 
 - **Claude Code:** `/plugin marketplace update criptonautas`
 - **opencode:** `git -C ~/nautas-skills pull`
-- **pi:** `pi update --extensions`
+- **Claude Desktop:** volver a subir los `.zip` de las skills que cambiaron
+- **pi:** `git -C ~/nautas-skills pull`
 
 ## Proponer cambios a las skills
 
@@ -120,4 +132,4 @@ Las skills son texto en `plugins/comunidad/skills/*/SKILL.md`. Para mejorarlas: 
 
 ## Licencia
 
-[CC BY-NC-SA 4.0](LICENSE): se puede copiar, adaptar y compartir libremente, citando a Criptonautas, con la misma licencia y **sin uso comercial**. Lo libre no se vende.
+[CC BY-NC-SA 4.0](LICENSE): se puede copiar, adaptar y compartir libremente, citando a Criptonautas, con la misma licencia y **sin uso comercial**. En nuestra filosofía lo libre se comparte; comerciar, lo demás.

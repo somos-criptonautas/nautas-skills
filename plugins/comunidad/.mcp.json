@@ -1,14 +1,8 @@
 {
   "mcpServers": {
     "comunidad": {
-      "command": "npx",
-      "args": [
-        "-y", "@discourse/mcp@latest",
-        "--site", "https://comunidad.criptonautas.co",
-        "--profile", "~/.config/nautas/discourse.json",
-        "--allow_writes",
-        "--tools_mode", "discourse_api_only"
-      ]
+      "type": "http",
+      "url": "https://comunidad.criptonautas.co/mcp"
     }
   }
 }

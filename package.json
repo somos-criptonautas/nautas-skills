@@ -1,7 +1,0 @@
-{
-  "name": "nautas-skills",
-  "private": true,
-  "license": "CC-BY-NC-SA-4.0",
-  "keywords": ["pi-package"],
-  "pi": { "skills": ["./plugins/comunidad/skills"] }
-}
