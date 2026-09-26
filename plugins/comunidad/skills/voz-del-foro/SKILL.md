@@ -39,6 +39,31 @@ No copiar frases de esos posts. Se imita el ritmo y tono (local en la comunidad)
 
 **Jerga que no va:** gemas, joyas, picks, líderes de mercado, especialistas, expertos, ingresos pasivos, cualquier léxico corporativo o de influencer.
 
+## Vocabulario del foro
+
+Así nombramos las piezas de Discourse en todo texto: posts, interfaz, plugins y traducciones.
+
+| Discourse | Decimos | No |
+|---|---|---|
+| topic | historia | tema, topic |
+| post, reply | respuesta | publicación, post |
+| whisper | respuesta privada (responder en privado) | susurro |
+| staff | team | staff, equipo |
+| badge | reto, retos | insignia |
+
+Los temas de Telegram siguen siendo «temas»: son de Telegram, no del foro.
+
+## Textos de interfaz
+
+Para botones, ayudas y mensajes de plugins o temas del foro:
+
+- **Botones y etiquetas:** infinitivo o sustantivo. "Agregar reto", "Responder en privado", "Mensaje…".
+- **Ayudas:** impersonal y corto. "Se muestra al final de la historia." Solo lo necesario para decidir; las advertencias de seguridad se mantienen.
+- **Segunda persona** solo en avisos dirigidos a quien lee ("Te mencionó"), con voseo.
+- **Inclusivo indirecto:** "personas", "quienes", "la comunidad" antes que "usuarios" genérico. Niveles de confianza como NC0–NC4.
+- Agregar (no añadir), acá, celular, video. Comillas «».
+- Nada de calcos del español de Discourse core: si suena traducido, se reescribe.
+
 ## Formato Discourse
 
 Callouts habilitados, y solo estos:
@@ -74,4 +99,4 @@ Nunca publicar ni editar sin un sí explícito.
 3. Recién ahí `discourse_create_topic`, `discourse_create_post` o la herramienta de edición.
 4. Devolver el enlace publicado.
 
-Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en el mismo topic que se quería editar, con el diff, para que alguien del staff lo aplique. Con confirmación, como todo lo demás.
+Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en el mismo topic que se quería editar, con el diff, para que alguien del team lo aplique. Con confirmación, como todo lo demás.
