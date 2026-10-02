@@ -130,6 +130,13 @@ Si nuestro usuario no tiene permiso para editar algo (el curso, por ejemplo), el
 
 Las skills son texto en `plugins/comunidad/skills/*/SKILL.md`. Para mejorarlas: fork, cambio y pull request, o un tema en el foro con la propuesta. Criterio: menos es más, y cada regla nueva con un ejemplo real del foro.
 
+## Créditos
+
+Gracias a [KONVO](https://github.com/kirupa/KONVO), de Kirupa Chinnathambi. Adaptamos en nuestras palabras, sin copiar su texto, estas ideas:
+
+- **`voz-del-foro`:** revisar sin reescribir (informe por gravedad con cita exacta y qué conservar), listar observaciones antes de reescribir, las pruebas de la versión aburrida y del trasplante, y la idea de una lista de muletillas (la lista en español es nuestra).
+- **`wikis`:** preguntar antes de redactar una wiki nueva (para quién, qué debería poder hacer, experiencia propia, largo).
+
 ## Licencia
 
 [CC BY-NC-SA 4.0](LICENSE): se puede copiar, adaptar y compartir libremente, citando a Criptonautas, con la misma licencia y **sin uso comercial**. En nuestra filosofía lo libre se comparte; comerciar, lo demás.

@@ -39,6 +39,13 @@ No copiar frases de esos posts. Se imita el ritmo y tono (local en la comunidad)
 
 **Jerga que no va:** gemas, joyas, picks, líderes de mercado, especialistas, expertos, ingresos pasivos, cualquier léxico corporativo o de influencer.
 
+**Muletillas que no van:** cabe destacar, es importante señalar, en el panorama actual, sin lugar a dudas, adentrémonos, en definitiva, en conclusión, juega un papel fundamental, potenciar, crucial. Tampoco cierres de arenga ("el futuro es nuestro"). Valen solo con sentido literal.
+
+## Dos pruebas contra el relleno
+
+- **Versión aburrida:** quitar verbos grandilocuentes y sustantivos abstractos. Si queda "algo pasa" o "esto importa", se borra o se cambia por el dato concreto.
+- **Trasplante:** si la oración entra igual en el post de otra persona sobre otro tema, no es nuestra. Se suma el dato, la experiencia o el enlace que solo tenemos acá.
+
 ## Vocabulario del foro
 
 Así nombramos las piezas de Discourse en todo texto: posts, interfaz, plugins y traducciones.
@@ -89,6 +96,31 @@ Además:
 
 - ❌ Observa el gráfico y encontrarás la tendencia.
 - ✅ En el gráfico se ve la tendencia: mínimos cada vez más altos.
+
+## Revisar sin reescribir
+
+Cuando se pide revisar o "decime qué está mal", no se reescribe. Se devuelve un informe:
+
+| Gravedad | Dónde | Cita | Por qué | Arreglo |
+|---|---|---|---|---|
+| alta / media / baja | sección o párrafo | «texto exacto» | una línea | cambio puntual o dirección para quien escribe |
+
+- **Alta:** dato falso o sin fuente, rompe una regla de la comunidad, confunde.
+- **Media:** estructura, claridad, formato Discourse.
+- **Baja:** ritmo, una palabra, puntuación.
+
+Cerrar con **Qué conservar**: 1–3 pasajes que suenan a quien escribe, para no pulirlos en una revisión posterior.
+
+## Antes de reescribir
+
+Al pasar un borrador a la voz del foro, antes del texto nuevo se listan:
+
+- afirmaciones sin enlace o para verificar, citadas;
+- contexto que falta para quien no estuvo en la charla;
+- frases de relleno (ver *Dos pruebas contra el relleno*);
+- dónde ayudaría un ejemplo, una imagen o un enlace a una historia del foro.
+
+Después, el texto. Si se pide "solo el texto", se omite la lista.
 
 ## Publicar: borrador y confirmación
 

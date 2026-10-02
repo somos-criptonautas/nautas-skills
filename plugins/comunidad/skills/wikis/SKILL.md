@@ -11,6 +11,15 @@ Aplicar primero la skill `voz-del-foro` (incluye leer la voz de quien escribe).
 
 `discourse_search` con el tema y `tags:wiki`. Si ya existe una wiki sobre eso, se amplía; no se abre otra.
 
+### Antes de redactar una wiki nueva
+
+Si el pedido no lo aclara, preguntar una sola vez (máx. 4):
+
+- para quién es: recién llegado o con experiencia;
+- qué debería poder hacer después de leerla;
+- qué ejemplo o experiencia propia aporta quien escribe;
+- largo aproximado.
+
 ## 2. Dónde va
 
 Una wiki **no va en la categoría wiki**: va en la categoría donde pertenece por tema (opsec, cripto, tech-apps…) con el tag **`wiki`**. El foro la muestra también en la vista de wiki.
