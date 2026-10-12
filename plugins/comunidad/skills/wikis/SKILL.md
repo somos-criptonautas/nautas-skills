@@ -9,7 +9,7 @@ Aplicar primero la skill `voz-del-foro` (incluye leer la voz de quien escribe).
 
 ## 1. Buscar antes de crear
 
-`discourse_search` con el tema y `tags:wiki`. Si ya existe una wiki sobre eso, se amplía; no se abre otra.
+`discourse_search` con el asunto y `tags:wiki`. Si ya existe una wiki sobre eso, se amplía; no se abre otra.
 
 ### Antes de redactar una wiki nueva
 
@@ -28,7 +28,7 @@ Revisar qué tags admite esa categoría: Discourse descarta en silencio los que 
 
 ## 3. Elegir plantilla
 
-Cada plantilla tiene su topic explicativo (leerlo si hay dudas). Secciones en este orden:
+Cada plantilla tiene su historia explicativa (leerlo si hay dudas). Secciones en este orden:
 
 | Plantilla | Para qué | Secciones |
 |---|---|---|
@@ -59,7 +59,7 @@ El agente no sube archivos. Se proponen imágenes (repos oficiales, documentaci�
 1. Leer el post completo con `discourse_read_post` (raw).
 2. Cambiar solo lo necesario. No reescribir aportes de otras personas ni cambiar su tono; se corrige dato, formato o voz de comunidad.
 3. Mostrar el **diff** (antes → después) por sección, con una línea de por qué.
-4. Si el cambio es grande o discutible, proponerlo primero como respuesta en el topic.
+4. Si el cambio es grande o discutible, proponerlo primero como respuesta en la historia.
 
 ## 7. Publicar y verificar
 

@@ -9,7 +9,7 @@ Skills y conexión a [comunidad.criptonautas.co](https://comunidad.criptonautas.
 
 | Skill | Para qué |
 |---|---|
-| `voz-del-foro` | Tono y formato de la comunidad. Antes de escribir, lee nuestras últimas publicaciones para publicar o editar según nuestras convenciones, voz general y estilo personal. |
+| `voz-del-foro` | Tono y formato de la comunidad. Antes de escribir, lee nuestras últimas respuestas para tomar el estilo personal y las reglas comunes de la historia Voz del foro, las mismas que siguen los bots del foro. |
 | `glosario` | Crear o editar términos del glosario sin duplicar, convenciones básicas aplicadas para mantener consistencia al publicar. |
 | `wikis` | Wikis co-autoreadas con las plantillas del foro (Conceptos, Guía, Recursos, Experiencia). |
 | `curso` | Proponer o aplicar ediciones al curso respetando numeración, TL;DR y navegación. |
@@ -104,20 +104,20 @@ Se pide en lenguaje natural. Ejemplos:
 - *"Sumá al glosario el término slippage."*
 - *"Armá una wiki tipo guía paso a paso para verificar una descarga con GPG."*
 - *"Revisá la wiki de redes de transferencia y proponé qué actualizar."*
-- *"En el tema 2.2.2 del curso falta un ejemplo de retesteo falso en una lateral: proponé la edición."*
+- *"En la historia 2.2.2 del curso falta un ejemplo de retesteo falso en una lateral: proponé la edición."*
 - *"Pasá este borrador a la voz del foro."*
 
 El recorrido es siempre el mismo:
 
-1. **Lee nuestra voz y estilo:** nuestras últimas publicaciones en el foro.
-2. **Busca en la comunidad** si ya existe algo sobre el tema.
+1. **Lee nuestra voz y las reglas comunes:** nuestras últimas respuestas y la historia Voz del foro.
+2. **Busca en la comunidad** si ya existe algo sobre eso.
 3. **Muestra el borrador** (o el diff, si es una edición), con categoría y tags.
 4. **Espera un sí** explícito.
 5. **Publica** y devuelve el enlace para verificar.
 
 SIEMPRE verificamos lo publicado, porque usamos la herramienta para agilizar y no para reemplazarnos. Somos una comunidad de humanos que usan herramientas, y eso no cambiará por utilizar IA.
 
-Si nuestro usuario no tiene permiso para editar algo (el curso, por ejemplo), el agente ofrece dejar la propuesta como respuesta en el tema para que el staff la aplique.
+Si nuestro usuario no tiene permiso para editar algo (el curso, por ejemplo), el agente ofrece dejar la propuesta como respuesta en la misma historia para que el team la aplique.
 
 ## Cómo actualizar
 
@@ -128,7 +128,7 @@ Si nuestro usuario no tiene permiso para editar algo (el curso, por ejemplo), el
 
 ## Proponer cambios a las skills
 
-Las skills son texto en `plugins/comunidad/skills/*/SKILL.md`. Para mejorarlas: fork, cambio y pull request, o un tema en el foro con la propuesta. Criterio: menos es más, y cada regla nueva con un ejemplo real del foro.
+Las skills son texto en `plugins/comunidad/skills/*/SKILL.md`. Para mejorarlas: fork, cambio y pull request, o una historia en el foro con la propuesta. Criterio: menos es más, y cada regla nueva con un ejemplo real del foro.
 
 ## Créditos
 
@@ -139,4 +139,4 @@ Gracias a [KONVO](https://github.com/kirupa/KONVO), de Kirupa Chinnathambi. Adap
 
 ## Licencia
 
-[CC BY-NC-SA 4.0](LICENSE): se puede copiar, adaptar y compartir libremente, citando a Criptonautas, con la misma licencia y **sin uso comercial**. En nuestra filosofía lo libre se comparte; comerciar, lo demás.
+[CC BY-SA 4.0](LICENSE): se puede copiar, adaptar y compartir libremente, para cualquier fin, citando a Criptonautas y **con la misma licencia**. Quien lo modifique tiene que liberar sus cambios igual: lo libre se comparte y nadie puede cerrarlo.

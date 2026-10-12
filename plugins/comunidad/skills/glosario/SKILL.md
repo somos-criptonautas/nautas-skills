@@ -45,7 +45,7 @@ Lo que recibe el minero que completa un bloque: monedas nuevas más las comision
 
 ## 3. Reglas
 
-- Sin opinión dentro de la definición; si la comunidad tiene postura, va en la frase de ejemplo o con enlace a un topic del foro.
+- Sin opinión dentro de la definición; si la comunidad tiene postura, va en la frase de ejemplo o con enlace a una historia del foro.
 - Sin enlaces externos salvo que el término no se entienda sin ellos.
 - Un dato que cambia con el tiempo (recompensa por bloque, fees, límites) lleva desde cuándo vale, para que se note si quedó viejo: "desde 2024 es de 3.125 BTC", no "es de 3.125 BTC".
 - No editar el índice de [INFO] Sobre nuestro Glosario: se actualiza solo.

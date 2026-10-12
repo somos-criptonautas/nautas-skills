@@ -17,46 +17,35 @@ Antes de redactar nada:
 4. Anotar, en 3–5 viñetas internas: largo de oraciones, localismos, uso de negritas/listas/callouts, emojis, cómo abre y cómo cierra.
 5. Si tiene menos de 3 posts con cuerpo, usar como referencia los últimos de `@system` y `@satonotdead` (`discourse_search` con `@system order:latest`).
 
-No copiar frases de esos posts. Se imita el ritmo y tono (local en la comunidad), no el contenido.
+No copiar frases de esas respuestas. Se imita el ritmo y tono (local en la comunidad), no el contenido.
 
-## Reglas de la comunidad
+## Paso 2 — Leer las reglas comunes (obligatorio)
 
-**Somos:** comunidad de trading P2P, co-autoreada, abierta, cypherpunk. Hablamos **de nosotros**, no le hablamos al lector porque nos incluímos como algo que nos incluye a todos.
+Las reglas de voz, vocabulario y formato viven en una sola historia del foro, la misma que leen los bots: **Voz del foro**, abierta a la comunidad. Así humanos y bots escriben igual y las reglas se cambian en un solo lugar.
 
-- **Primera persona plural** como eje: "identificamos", "operamos", "en la comunidad no las usamos".
-- **Impersonal** para recomendar: "conviene", "se sugiere", "alcanza con".
-- **Dirigirse en segunda persona solo si es muy puntual** (una pregunta directa, un aviso). Cuando pasa: voseo suave (podés, sumate), nunca tuteo marcado (eres, puedes, encontrarás, observa).
-- **Localismos leves** sí: acá, allá, adentro. Lunfardo y compadrazgo ya no, porque queremos ampliar nuestra audiencia y expandirnos hacia modismos que van más allá de donde nacimos. Para nosotros las banderas no existen sino una integración humana real.
-- **Plano y conciso:** oraciones cortas, sin saludos ("¡Hola banda!"), sin relleno emocional.
-- **Datos matan relatos:** afirmaciones con enlace a evidencia, preferentemente topics del propio foro.
+1. `discourse_read_topic` con `topic_id: 7132`, `post_limit: 1` ([Voz del foro](https://comunidad.criptonautas.co/t/voz-del-foro/7132)).
+2. Aplicar completo el raw del primer post.
+3. Si falla la lectura, avisar antes de redactar: sin esas reglas no se escribe.
+
+Lo que sigue complementa esa historia para quien escribe con su propia cuenta.
+
+## Quiénes somos
+
+Comunidad de trading P2P, co-autoreada, abierta, cypherpunk. Hablamos **de nosotros**: nos incluimos en lo que contamos. Localismos leves sí (acá, allá, adentro); lunfardo y compadrazgo no, porque escribimos para una comunidad que va más allá de donde nació.
+
+- **Datos matan relatos:** afirmaciones con enlace a evidencia, preferentemente historias del propio foro.
 - **Inclusivo indirecto:** "quienes participamos", "la comunidad", "cada trader". Nunca `@`, `-e`, `-x`.
-- **Cero hype:** sin urgencia, escasez, promesas de rentabilidad, superlativos absolutos, "no te lo pierdas".
-- **"X no es A, sino B"** vale. **"No es X: es Y"** no se usa.
 - El dolor va en pasado y sin autocompasión. Dato, no lamento.
 - El fundador es "nuestro fundador", nunca gurú. La suscripción se menciona, no se vende.
 
-**Jerga que va:** anons, nautas, agoristas, OPSEC, rekt, DIP, setup, P2P, open-source, datos matan relatos, menos es más, *en la mira* (criptos con perspectiva), anonist (siempre en minúscula, sin comillas).
+**Jerga que va:** anons, nautas, agoristas, OPSEC, rekt, DIP, setup, open-source, datos matan relatos, menos es más, *en la mira* (criptos con perspectiva), anonist (siempre en minúscula, sin comillas).
 
-**Jerga que no va:** gemas, joyas, picks, líderes de mercado, especialistas, expertos, ingresos pasivos, cualquier léxico corporativo o de influencer.
-
-**Muletillas que no van:** cabe destacar, es importante señalar, en el panorama actual, sin lugar a dudas, adentrémonos, en definitiva, en conclusión, juega un papel fundamental, potenciar, crucial. Tampoco cierres de arenga ("el futuro es nuestro"). Valen solo con sentido literal.
+**Muletillas que no van**, además de las de la historia común: en el panorama actual, sin lugar a dudas, adentrémonos, en definitiva, juega un papel fundamental, potenciar, crucial. Tampoco cierres de arenga ("el futuro es nuestro"). Valen solo con sentido literal.
 
 ## Dos pruebas contra el relleno
 
 - **Versión aburrida:** quitar verbos grandilocuentes y sustantivos abstractos. Si queda "algo pasa" o "esto importa", se borra o se cambia por el dato concreto.
-- **Trasplante:** si la oración entra igual en el post de otra persona sobre otro tema, no es nuestra. Se suma el dato, la experiencia o el enlace que solo tenemos acá.
-
-## Vocabulario del foro
-
-Así nombramos las piezas de Discourse en todo texto: posts, interfaz, plugins y traducciones.
-
-| Discourse | Decimos | No |
-|---|---|---|
-| topic | historia | tema, topic |
-| post, reply | respuesta | publicación, post |
-| whisper | respuesta privada (responder en privado) | susurro |
-| staff | team | staff, equipo |
-| badge | reto, retos | insignia |
+- **Trasplante:** si la oración entra igual en la respuesta de otra persona sobre otro asunto, no es nuestra. Se suma el dato, la experiencia o el enlace que solo tenemos acá.
 
 Los temas de Telegram siguen siendo «temas»: son de Telegram, no del foro.
 
@@ -71,23 +60,11 @@ Para botones, ayudas y mensajes de plugins o temas del foro:
 - Agregar (no añadir), acá, celular, video. Comillas «».
 - Nada de calcos del español de Discourse core: si suena traducido, se reescribe.
 
-## Formato Discourse
-
-Callouts habilitados, y solo estos:
-
-- `> [!tldr]` — resumen arriba cuando el texto es largo: una o dos oraciones.
-- `> [!info]` — contexto.
-- `> [!tip]` — consejo práctico.
-- `> [!warning]` — advertencia, limitación, precaución de seguridad.
-- `> [!quote]` — cita textual.
-
-Callouts cortos: cada línea con `>` (también las vacías), negrita solo en lo relevante. Con título: `> [!warning] **TÍTULO**` en la misma línea. No repetir el mismo tipo seguido; alternar.
-
-Además:
+## Además del formato común
 
 - `<details><summary>…</summary> … </details>` para ampliar sin cortar la lectura.
 - `##` para secciones, negritas operativas, listas cortas.
-- Cerrar con `## Data relacionada` y enlaces a topics del foro cuando aplique.
+- Cerrar con `## Data relacionada` y enlaces a historias del foro cuando aplique.
 
 ## Antes y después
 
@@ -131,4 +108,4 @@ Nunca publicar ni editar sin un sí explícito.
 3. Recién ahí `discourse_create_topic`, `discourse_create_post` o la herramienta de edición.
 4. Devolver el enlace publicado.
 
-Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en el mismo topic que se quería editar, con el diff, para que alguien del team lo aplique. Con confirmación, como todo lo demás.
+Discourse decide qué puede hacer cada persona según su nivel y grupos. Si una acción falla por permisos, no insistir: ofrecer dejarlo como respuesta en la misma historia que se quería editar, con el diff, para que alguien del team lo aplique. Con confirmación, como todo lo demás.
