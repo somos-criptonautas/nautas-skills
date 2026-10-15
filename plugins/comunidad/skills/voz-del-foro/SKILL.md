@@ -88,6 +88,16 @@ Cuando se pide revisar o "decime qué está mal", no se reescribe. Se devuelve u
 
 Cerrar con **Qué conservar**: 1–3 pasajes que suenan a quien escribe, para no pulirlos en una revisión posterior.
 
+## Citas y textos de otras personas
+
+Respuestas de encuestas, testimonios o posts ajenos se corrigen sin cambiar lo que dicen:
+
+- **Se corrige:** ortografía, tildes, puntuación, mayúsculas sostenidas, concordancia y tipeos ("ser se valor" → "ser de valor").
+- **No se toca:** las palabras elegidas, el orden, el tono ni los coloquialismos ("bue", "laburo", "me coman"). Si una corrección cambia el sentido o el tono, queda como está.
+- **Recortes** con […], sin unir frases que no iban juntas. Afuera los nombres propios y los datos que identifiquen.
+- Una `@` como inclusivo se recorta o se resuelve con la mínima intervención.
+- Al proponer una cita para aprobar, se muestra el original al lado si se corrigió algo más que tildes.
+
 ## Antes de reescribir
 
 Al pasar un borrador a la voz del foro, antes del texto nuevo se listan:
