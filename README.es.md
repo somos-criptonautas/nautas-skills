@@ -16,6 +16,12 @@ Skills y conexión a [comunidad.criptonautas.co](https://comunidad.criptonautas.
 | `wikis` | Wikis co-autoreadas con las plantillas del foro (Conceptos, Guía, Recursos, Experiencia). |
 | `curso` | Proponer o aplicar ediciones al curso respetando numeración, TL;DR y navegación. |
 
+Y un segundo plugin, `marca`, que no necesita cuenta del foro ni conexión:
+
+| Skill | Para qué |
+|---|---|
+| `identidad-visual` | Generar cualquier pieza con nuestra identidad: de dónde se leen los colores y las tipografías del [brand kit](https://github.com/somos-criptonautas/brand-kit), qué reglas tienen el logo y las imágenes, y cómo se exportan los archivos. |
+
 La conexión usa el servidor MCP oficial de nuestro Discourse (`https://comunidad.criptonautas.co/mcp`). Cada persona entra con su propia cuenta por OAuth, desde un enlace: este repo no guarda claves ni accesos, todo se gestiona en el foro.
 
 ## Antes de empezar
@@ -34,6 +40,7 @@ Dentro de Claude Code:
 ```text
 /plugin marketplace add somos-criptonautas/nautas-skills
 /plugin install comunidad@criptonautas
+/plugin install marca@criptonautas
 ```
 
 Reiniciar Claude Code, escribir `/mcp`, elegir `comunidad` y autorizar en el enlace. Skills y conexión quedan listas.

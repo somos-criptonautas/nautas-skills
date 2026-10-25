@@ -1,0 +1,6 @@
+{
+  "name": "marca",
+  "version": "0.1.0",
+  "description": "Generar materiales con la identidad visual de Criptonautas leyendo los valores del brand kit.",
+  "license": "CC-BY-SA-4.0"
+}

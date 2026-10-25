@@ -1,11 +1,18 @@
 {
   "name": "criptonautas",
-  "owner": { "name": "Criptonautas" },
+  "owner": {
+    "name": "Criptonautas"
+  },
   "plugins": [
     {
       "name": "comunidad",
       "source": "./plugins/comunidad",
       "description": "Skills de voz, glosario, wikis y curso + MCP de Discourse para comunidad.criptonautas.co"
+    },
+    {
+      "name": "marca",
+      "source": "./plugins/marca",
+      "description": "Identidad visual de Criptonautas: colores, tipografía, logo y reglas de salida, leídos del brand kit"
     }
   ]
 }
