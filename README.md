@@ -21,6 +21,8 @@ And a second plugin, `marca`, which needs no forum account or connection:
 | Skill | For |
 |---|---|
 | `identidad-visual` | Make any piece with our visual identity: where to read colors and typefaces from the [brand kit](https://github.com/somos-criptonautas/brand-kit), the rules for the logo and images, and how files are exported. |
+| `pdf` | Write a downloadable PDF from Markdown with [criptonautas-pdf](https://github.com/somos-criptonautas/criptonautas-pdf): shared layout, no metadata, reproducible. |
+| `presentaciones` | Build an offline HTML slide deck with [criptonautas-slides](https://github.com/somos-criptonautas/criptonautas-slides). |
 
 The connection uses our Discourse's official MCP server (`https://comunidad.criptonautas.co/mcp`). Each person signs in with their own account through OAuth, from a link: this repo holds no keys or access, everything is managed on the forum.
 

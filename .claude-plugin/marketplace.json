@@ -12,7 +12,7 @@
     {
       "name": "marca",
       "source": "./plugins/marca",
-      "description": "Identidad visual de Criptonautas: colores, tipografía, logo y reglas de salida, leídos del brand kit"
+      "description": "Identidad visual de Criptonautas, PDFs y presentaciones: colores, tipografía, logo y reglas de salida, leídos del brand kit"
     }
   ]
 }

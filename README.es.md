@@ -21,6 +21,8 @@ Y un segundo plugin, `marca`, que no necesita cuenta del foro ni conexión:
 | Skill | Para qué |
 |---|---|
 | `identidad-visual` | Generar cualquier pieza con nuestra identidad: de dónde se leen los colores y las tipografías del [brand kit](https://github.com/somos-criptonautas/brand-kit), qué reglas tienen el logo y las imágenes, y cómo se exportan los archivos. |
+| `pdf` | Escribir un PDF para descargar desde Markdown con [criptonautas-pdf](https://github.com/somos-criptonautas/criptonautas-pdf): maqueta compartida, sin metadatos y reproducible. |
+| `presentaciones` | Armar una presentación en HTML que funciona sin internet con [criptonautas-slides](https://github.com/somos-criptonautas/criptonautas-slides). |
 
 La conexión usa el servidor MCP oficial de nuestro Discourse (`https://comunidad.criptonautas.co/mcp`). Cada persona entra con su propia cuenta por OAuth, desde un enlace: este repo no guarda claves ni accesos, todo se gestiona en el foro.
 
